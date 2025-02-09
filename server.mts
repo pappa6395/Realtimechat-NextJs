@@ -1,9 +1,12 @@
 import { createServer } from 'node:http';
 import next from "next"
 import { Server } from "socket.io";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const dev = process.env.NODE_ENV !== "production";
-const hostname = process.env.HOSTNAME || "localhost";
+const hostname = process.env.HOSTNAME || "0.0.0.0";
 const port = parseInt(process.env.PORT || "3002", 10);
 
 const app = next({ dev, hostname, port });
