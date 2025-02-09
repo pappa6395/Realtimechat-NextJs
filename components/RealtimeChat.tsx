@@ -21,11 +21,6 @@ const RealtimeChat = ({
   return (
     <div>
       <h2 className="text-xl font-bold">Real-Time Chat</h2>
-      <div>
-        <div>
-          {/* TODO: CHAT ROOM */}
-        </div>
-      </div>
       <form onSubmit={handleSubmit}>
         <div className="flex">
           <input

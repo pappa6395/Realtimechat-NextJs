@@ -26,7 +26,7 @@ const ChatMessage = ({ sender, message, isOwnMessage}: ChatMessageProps) => {
             ? "bg-gray-700 text-center text-xs font-semibold text-white" 
             : isOwnMessage 
             ? "bg-blue-500 text-white" 
-            : "bg-gray-200"
+            : "bg-gray-200 dark:text-slate-700"
         }`}>
             {!isSystemMessage && <p className='text-sm font-bold'>{sender}</p>}
             <p>{message}</p>
